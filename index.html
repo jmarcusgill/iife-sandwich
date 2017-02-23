@@ -2,29 +2,30 @@
 <html>
 <head>
   <title>IIFE SANDWICH</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <h1>Subway: Eat Flesh</h1>
 
-<form>
+<form class="container">
   <fieldset>
     <legend>Choose Your Bread: </legend>
       <label for="white">White</label>
-      <input type="checkbox" id="white" value="bread_choice" name="bread">
+      <input type="checkbox" id="white" value="bread-choice" name="bread">
       <label for="rye">Rye</label>
-      <input type="checkbox" id="rye" value="bread_choice" name="bread">
+      <input type="checkbox" id="rye" value="bread-choice" name="bread">
       <label for="wheat">Wheat</label>
-      <input type="checkbox" id="wheat" value="bread_choice" name="bread">
+      <input type="checkbox" id="wheat" value="bread-choice" name="bread">
       <label for="peta">Peta</label>
-      <input type="checkbox" id="peta" value="bread_choice" name="bread">
+      <input type="checkbox" id="peta" value="bread-choice" name="bread">
   </fieldset>
 
   <fieldset>
     <legend>Choose Your Meats: </legend>
       <label for="turkey">Turkey</label>
-      <input type="checkbox" id="turkey" value="meat_choice" name="meat">
+      <input type="checkbox" id="turkey" value="meat-choice" name="meat">
       <label for="ham">Ham</label>
-      <input type="checkbox" id="ham" value="meat_choice" name="meat">
+      <input type="checkbox" id="ham" value="meat-choice" name="meat">
       <label for="salami">Salami</label>
       <input type="checkbox" id="salami" value="meat-choice" name=meat>
       <label for="roastBeaf">Roast-beef</label>
@@ -67,12 +68,14 @@
       <input type="checkbox" id="sriracha" value="condiment-chooser" name="condiment">
   </fieldset>
 
-  <fieldset>
-    <legend>Your expected order and price: </legend>
-    <div class="outputSandwich"></div>
-  </fieldset>
 
 </form>
+
+  <fieldset>
+    <legend>Your expected order and price: </legend>
+    <button class="btn">Make it!</button>
+    <div class="outputSandwich"></div>
+  </fieldset>
 
 </body>
 </html>
