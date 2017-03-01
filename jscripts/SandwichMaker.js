@@ -1,5 +1,3 @@
-console.log("SandwichMaker.js")
-
 var SandwichMaker = (function() {
 
   // Private variable to store the price
@@ -14,7 +12,7 @@ var SandwichMaker = (function() {
       totalPrice -= toppingPrice;
     },
     getTotalPrice: function() {
-      return totalPrice;
+      return totalPrice.toFixed(2);
     }
   };
 })();

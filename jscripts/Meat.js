@@ -1,5 +1,3 @@
-console.log("Meat.js")
-
 // This SandwichMaker IIFE augments the original one
 var SandwichMaker = (function(maker) {
 

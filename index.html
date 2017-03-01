@@ -12,13 +12,13 @@
   <fieldset>
     <div id="breadChooser">
       <legend>Choose Your Bread: </legend>
-        <label for="white">White</label>
+        <label for="white">White: $.25</label>
         <input type="checkbox" id="white" value="white" name="bread">
-        <label for="rye">Rye</label>
+        <label for="rye">Rye: $1.2</label>
         <input type="checkbox" id="rye" value="rye" name="bread">
-        <label for="wheat">Wheat</label>
+        <label for="wheat">Wheat: $.75</label>
         <input type="checkbox" id="wheat" value="wheat" name="bread">
-        <label for="peta">Peta</label>
+        <label for="peta">Peta: $1.00</label>
         <input type="checkbox" id="peta" value="peta" name="bread">
     </div>
   </fieldset>
@@ -28,11 +28,11 @@
       <legend>Choose Your Meats: </legend>
         <label for="turkey">Turkey: $1.00</label>
         <input type="checkbox" id="turkey" value="turkey" name="meat">
-        <label for="ham">Ham: .75</label>
+        <label for="ham">Ham: $.75</label>
         <input type="checkbox" id="ham" value="ham" name="meat">
-        <label for="salami">Salami: .25</label>
+        <label for="salami">Salami: $.25</label>
         <input type="checkbox" id="salami" value="salami" name=meat>
-        <label for="roastBeaf">Roastbeef: .50</label>
+        <label for="roastBeaf">Roastbeef: $.50</label>
         <input type="checkbox" id="roastBeef" value="roastbeef" name="meat">
     </div>
   </fieldset>
@@ -40,13 +40,13 @@
   <fieldset>
     <div id="cheeseChooser">
       <legend>Choose Your Cheeses: </legend>
-        <label for="swiss">Swiss</label>
+        <label for="swiss">Swiss: $.25</label>
         <input type="checkbox" id="swiss" value="swiss" name="cheese">
-        <label for="cheddar">Cheddar</label>
+        <label for="cheddar">Cheddar: $1.20</label>
         <input type="checkbox" id="cheddar" value="cheddar" name="cheese">
-        <label for="provalone">Provalone</label>
+        <label for="provalone">Provalone: $.75</label>
         <input type="checkbox" id="provalone" value="provalone" name="cheese">
-        <label for="gouda">Gouda</label>
+        <label for="gouda">Gouda: $1.00</label>
         <input type="checkbox" id="gouda" value="gouda" name="cheese">
     </div>
   </fieldset>
@@ -54,27 +54,27 @@
   <fieldset>
     <div id="veggieChooser">
       <legend>Choose Your Veggies: </legend>
-        <label for="lettuce">Lettuce</label>
+        <label for="lettuce">Lettuce: $.25</label>
         <input type="checkbox" id="lettuce" value="lettuce" name="veggie">
-        <label for="tomato">Tomato</label>
+        <label for="tomato">Tomato: $1.2</label>
         <input type="checkbox" id="tomato" value="tomato" name="veegie">
-        <label for="onion">Onion</label>
+        <label for="onion">Onion: $.75</label>
         <input type="checkbox" id="onion" value="onion" name="veggie">
-        <label for="pickle">Pickles</label>
-        <input type="checkbox" id="pickle" value="pickles" name="veggie">
+        <label for="pickles">Pickles: $1.00</label>
+        <input type="checkbox" id="pickles" value="pickles" name="veggie">
     </div>
   </fieldset>
 
   <fieldset>
     <div id="condimentChooser">
       <legend>Choose Your Condiments: </legend>
-        <label for="mayo">Mayo</label>
+        <label for="mayo">Mayo: $.25</label>
         <input type="checkbox" id="mayo" value="mayo" name="condiment">
-        <label for="mustard">Mustard</label>
+        <label for="mustard">Mustard: $1.20</label>
         <input type="checkbox" id="mustard" value="mustard" name="condiment">
-        <label for="italian">Italian</label>
+        <label for="italian">Italian: $.75</label>
         <input type="checkbox" id="italian" value="italian" name="condiment">
-        <label for="sriracha">Sriracha</label>
+        <label for="sriracha">Sriracha: $1.00</label>
         <input type="checkbox" id="sriracha" value="sriracha" name="condiment">
     </div>
   </fieldset>
@@ -84,13 +84,17 @@
 
   <fieldset>
     <legend>Your expected order and price: </legend>
-    <button class="btn">Make it!</button>
+    <button id="btn">Make it!</button>
     <div id="outputSandwich"></div>
   </fieldset>
 
 
 <script type="text/javascript" src="../jscripts/SandwichMaker.js"></script>
+<script type="text/javascript" src="../jscripts/bread.js"></script>
 <script type="text/javascript" src="../jscripts/Meat.js"></script>
+<script type="text/javascript" src="../jscripts/cheese.js"></script>
+<script type="text/javascript" src="../jscripts/veggie.js"></script>
+<script type="text/javascript" src="../jscripts/cond.js"></script>
 <script type="text/javascript" src="../jscripts/DOMhandler.js"></script>
 </body>
 </html>
