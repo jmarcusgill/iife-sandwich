@@ -8,64 +8,75 @@
 <h1>Subway: Eat Flesh</h1>
 
 <form class="container">
+
   <fieldset>
-    <legend>Choose Your Bread: </legend>
-      <label for="white">White</label>
-      <input type="checkbox" id="white" value="bread-choice" name="bread">
-      <label for="rye">Rye</label>
-      <input type="checkbox" id="rye" value="bread-choice" name="bread">
-      <label for="wheat">Wheat</label>
-      <input type="checkbox" id="wheat" value="bread-choice" name="bread">
-      <label for="peta">Peta</label>
-      <input type="checkbox" id="peta" value="bread-choice" name="bread">
+    <div id="breadChooser">
+      <legend>Choose Your Bread: </legend>
+        <label for="white">White</label>
+        <input type="checkbox" id="white" value="white" name="bread">
+        <label for="rye">Rye</label>
+        <input type="checkbox" id="rye" value="rye" name="bread">
+        <label for="wheat">Wheat</label>
+        <input type="checkbox" id="wheat" value="wheat" name="bread">
+        <label for="peta">Peta</label>
+        <input type="checkbox" id="peta" value="peta" name="bread">
+    </div>
   </fieldset>
 
   <fieldset>
-    <legend>Choose Your Meats: </legend>
-      <label for="turkey">Turkey</label>
-      <input type="checkbox" id="turkey" value="meat-choice" name="meat">
-      <label for="ham">Ham</label>
-      <input type="checkbox" id="ham" value="meat-choice" name="meat">
-      <label for="salami">Salami</label>
-      <input type="checkbox" id="salami" value="meat-choice" name=meat>
-      <label for="roastBeaf">Roast-beef</label>
-      <input type="checkbox" id="roastBeef" value="meat-choice" name="meat">
+    <div id="meatChooser">
+      <legend>Choose Your Meats: </legend>
+        <label for="turkey">Turkey: $1.00</label>
+        <input type="checkbox" id="turkey" value="turkey" name="meat">
+        <label for="ham">Ham: .75</label>
+        <input type="checkbox" id="ham" value="ham" name="meat">
+        <label for="salami">Salami: .25</label>
+        <input type="checkbox" id="salami" value="salami" name=meat>
+        <label for="roastBeaf">Roastbeef: .50</label>
+        <input type="checkbox" id="roastBeef" value="roastbeef" name="meat">
+    </div>
   </fieldset>
 
   <fieldset>
-    <legend>Choose Your Cheeses: </legend>
-      <label for="swiss">Swiss</label>
-      <input type="checkbox" id="swiss" value="cheese-choice" name="cheese">
-      <label for="cheddar">Cheddar</label>
-      <input type="checkbox" id="cheddar" value="cheese-choice" name="cheese">
-      <label for="provalone">Provalone</label>
-      <input type="checkbox" id="provalone" value="cheese-choice" name="cheese">
-      <label for="gouda">Gouda</label>
-      <input type="checkbox" id="gouda" value="cheese-choice" name="cheese">
+    <div id="cheeseChooser">
+      <legend>Choose Your Cheeses: </legend>
+        <label for="swiss">Swiss</label>
+        <input type="checkbox" id="swiss" value="swiss" name="cheese">
+        <label for="cheddar">Cheddar</label>
+        <input type="checkbox" id="cheddar" value="cheddar" name="cheese">
+        <label for="provalone">Provalone</label>
+        <input type="checkbox" id="provalone" value="provalone" name="cheese">
+        <label for="gouda">Gouda</label>
+        <input type="checkbox" id="gouda" value="gouda" name="cheese">
+    </div>
   </fieldset>
 
   <fieldset>
-     <legend>Choose Your Veggies: </legend>
-      <label for="lettuce">Lettuce</label>
-      <input type="checkbox" id="lettuce" value="veggie-chooser" name="veggie">
-      <label for="tomato">Tomato</label>
-      <input type="checkbox" id="tomato" value="veggie-chooser" name="veegie">
-      <label for="onion">Onion</label>
-      <input type="checkbox" id="onion" value="veggie-chooser" name="veggie">
-      <label for="pickle">Pickles</label>
-      <input type="checkbox" id="pickle" value="veggie-chooser" name="veggie">
+    <div id="veggieChooser">
+      <legend>Choose Your Veggies: </legend>
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" id="lettuce" value="lettuce" name="veggie">
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" id="tomato" value="tomato" name="veegie">
+        <label for="onion">Onion</label>
+        <input type="checkbox" id="onion" value="onion" name="veggie">
+        <label for="pickle">Pickles</label>
+        <input type="checkbox" id="pickle" value="pickles" name="veggie">
+    </div>
   </fieldset>
 
   <fieldset>
-    <legend>Choose Your Condiments: </legend>
-      <label for="mayo">Mayo</label>
-      <input type="checkbox" id="mayo" value="condiment-chooser" name="condiment">
-      <label for="mustard">Mustard</label>
-      <input type="checkbox" id="mustard" value="condiment-chooser" name="condiment">
-      <label for="italian">Italian</label>
-      <input type="checkbox" id="italian" value="condiment-chooser" name="condiment">
-      <label for="sriracha">Sriracha</label>
-      <input type="checkbox" id="sriracha" value="condiment-chooser" name="condiment">
+    <div id="condimentChooser">
+      <legend>Choose Your Condiments: </legend>
+        <label for="mayo">Mayo</label>
+        <input type="checkbox" id="mayo" value="mayo" name="condiment">
+        <label for="mustard">Mustard</label>
+        <input type="checkbox" id="mustard" value="mustard" name="condiment">
+        <label for="italian">Italian</label>
+        <input type="checkbox" id="italian" value="italian" name="condiment">
+        <label for="sriracha">Sriracha</label>
+        <input type="checkbox" id="sriracha" value="sriracha" name="condiment">
+    </div>
   </fieldset>
 
 
@@ -74,8 +85,12 @@
   <fieldset>
     <legend>Your expected order and price: </legend>
     <button class="btn">Make it!</button>
-    <div class="outputSandwich"></div>
+    <div id="outputSandwich"></div>
   </fieldset>
 
+
+<script type="text/javascript" src="../jscripts/SandwichMaker.js"></script>
+<script type="text/javascript" src="../jscripts/Meat.js"></script>
+<script type="text/javascript" src="../jscripts/DOMhandler.js"></script>
 </body>
 </html>
