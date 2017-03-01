@@ -11,7 +11,5 @@ var SandwichMaker = (function(maker){
     return veggiePrices[veggieType]
   };
 
-
-
   return maker;
 })(SandwichMaker || {});

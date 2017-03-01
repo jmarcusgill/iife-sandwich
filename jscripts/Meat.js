@@ -14,7 +14,6 @@ var SandwichMaker = (function(maker) {
     return meatPrices[meatType];
   };
 
-
   // Return the new, augmented object with the new method on it
   return maker;
 })(SandwichMaker);

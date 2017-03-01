@@ -11,7 +11,5 @@ var SandwichMaker = (function(maker){
     return condPrices[condType]
   };
 
-
-
   return maker;
 })(SandwichMaker || {});

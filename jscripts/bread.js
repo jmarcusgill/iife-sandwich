@@ -11,7 +11,5 @@ var SandwichMaker = (function(maker){
     return breadPrices[breadType]
   };
 
-
-
   return maker;
 })(SandwichMaker || {});

@@ -11,7 +11,5 @@ var SandwichMaker = (function(maker){
     return cheesePrices[cheeseType]
   };
 
-
-
   return maker;
 })(SandwichMaker || {});
