@@ -4,7 +4,7 @@ var SandwichMaker = (function(maker){
     "white": .25,
     "rye": 1.20,
     "wheat": .75,
-    "peta": 1.00
+    "pita": 1.00
   }
 
   maker.getBread = function(breadType) {
